@@ -1,0 +1,50 @@
+.heart{
+    position: relative;
+}
+
+.heart:before,.heart::after{
+    content: "";
+     width: 70px;
+     height: 125px;
+position: absolute;
+background: red;
+left: 70px;
+top: 0;
+ border-radius: 50px 50px 0 0; 
+ transform: rotate(-45deg);
+
+ transform-origin: 0 100%;
+}
+
+.heart::after{
+    
+left: 0px;
+top: 0;
+ 
+  transform: rotate(45deg);
+
+ transform-origin: 100% 100%;
+
+}
+
+.heart{
+    animation:haha  1s infinite ;
+    position: relative;
+margin: 50px auto;
+height: 170px;
+width: 200px;
+
+
+
+
+
+
+
+}
+
+ @keyframes haha {
+   
+    100%{
+        transform: scale(1.3);
+    }
+} 
